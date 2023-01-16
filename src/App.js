@@ -18,8 +18,7 @@ function App() {
 
 function CallClinicalServices() {
   var response = fetch("https://clinical.development.carecloud.com/v1/clinical/1331/alertsbypatient/32512159?authentication=AQIC5wM2LY4Sfcwl3cW3dlGs79XwoG0AEM5rowD_P_gxJYg.*AAJTSQACMDE.*", {
-    method: 'GET',
-    headers: {'Access-Control-Allow-Origin': '*'}
+    method: 'GET'
   });
   return response.body;
 }
